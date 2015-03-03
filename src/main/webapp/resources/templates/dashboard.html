@@ -1,0 +1,30 @@
+
+
+
+
+
+<div class="container">
+
+    <div class="col-sm-7 col-sm-offset-3">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">{{title}}-{{projects.length}}</div>
+            <div class="panel-body">
+
+                <div class="col-sm-12" ng-repeat="project in projects" ng-controller="ProjectController" style="padding-bottom: 10px">
+
+                    <div class="col-sm-3">{{project.projectID}}</div>
+                    <div class="col-sm-6">
+                        <input type="text" ng-model="project.projectName" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="col-sm-3">
+                        <button type="submit" class="btn btn-primary" ng-click="save()">Save</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
